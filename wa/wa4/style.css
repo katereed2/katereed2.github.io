@@ -1,0 +1,282 @@
+/*whole page styling*/
+body{
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: #5a2a45;
+  background: linear-gradient(180deg, #fff0f6, #ffffff);
+  line-height: 1.6;
+}
+
+/*top header styling*/
+header{
+  text-align: center;
+  background: #ffffff;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #ff8fc4;
+  box-shadow: 0 4px 14px rgba(255, 79, 163, 0.12);
+}
+
+/*h1 styling*/
+h1{
+  margin: 0;
+  font-size: 2.2rem;
+  color: #ff4fa3;
+  letter-spacing: 1px;
+}
+
+/*paragraph styling*/
+header p {
+  margin: 0.5rem 0 1rem;
+  font-weight: 600;
+}
+
+/*removes bullets and spacing from the nav list*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*makes the nav line up nex to one another*/
+nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+/*nav styling of links*/
+nav a,
+nav strong {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #ffd6e7;
+  color: #5a2a45;
+  font-weight: 700;
+}
+
+/*main spacing styling*/
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/*styling for each section box*/
+section {
+  background: #ffffff;
+  border: 2px solid #ffd6e7;
+  border-radius: 18px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 6px 16px rgba(255, 79, 163, 0.08);
+}
+
+/*styles all of the images*/
+img {
+  max-width: 100%;
+  border-radius: 16px;
+  border: 4px solid #ff8fc4;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.home-photo {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/*styles all of the h2s to keep formating the same*/
+h2 {
+  margin-top: 0;
+  color: #ff4fa3;
+  text-transform: lowercase;
+}
+
+/*styles the footer*/
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  border-top: 4px solid #ff8fc4;
+  font-weight: 600;
+}
+
+/*removes formatting around figure + centers*/
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+/*quick facts cards line up */
+.cardGrid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/*hobby bubble styling*/
+.hobby {
+  display: inline-block;
+  background: #ffd6e7;
+  border: 2px solid #ff8fc4;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  margin: 0.3rem;
+  font-weight: bold;
+}
+
+/*quick fact card styling*/
+.card {
+  background: #fff7fb;
+  border: 2px solid #ffb6d2;
+  border-radius: 18px;
+  padding: 1rem;
+}
+/*card header stlying*/
+.card h3 {
+  margin-top: 0;
+  color: #ff4fa3;
+}
+
+/*stylign for the skills section*/
+.info {
+  padding: 0.8rem 0;
+  border-bottom: 2px solid #ffd6e7;
+}
+
+/*gets rid of the line after the last chuhnk in the skills*/
+.info:last-child {
+  border-bottom: none;
+}
+
+/*styles heading info*/
+.info h3 {
+  margin-bottom: 0.4rem;
+  color: #ff4fa3;
+  text-transform: lowercase;
+}
+
+/*styles the about me page with phpto to have it on the right*/
+.drive {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.5rem;
+  align-items: center;
+}
+/*styles  family photo*/
+.familyPhoto {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 4px solid #ff8fc4;
+}
+
+/*styles each experience item*/
+.experience {
+  padding: 1rem 0;
+  border-bottom: 2px solid #ffd6e7;
+}
+
+/*gets rid of border on last one*/
+.experience:last-child {
+  border-bottom: none;
+}
+/*styles hedings insdie of expeirnce*/
+.experience h3 {
+  margin-bottom: 0.3rem;
+  color: #ff4fa3;
+}
+/*styles date */
+.date {
+  margin: 0 0 0.75rem 0;
+  font-weight: bold;
+  color: #5a2a45;
+}
+
+/*grid to add visual diversity*/
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/*project card styling*/
+.projectCard {
+  background: #fff7fb;
+  border: 2px solid #ffb6d2;
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+/*project card title*/
+.projectCard h3 {
+  margin-top: 0;
+  color: #ff4fa3;
+}
+/*styles project card name*/
+.projectLabel {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/*styles  main section */
+.contact {
+  background: #fff7fb;
+  border: 2px solid #ffb6d2;
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+/*makes headings pink for contct*/
+.contact h2,
+.contact h3 {
+  color: #ff4fa3;
+}
+
+/*styles form labels*/
+label {
+  font-weight: bold;
+  color: #ff4fa3;
+}
+
+/*styles text boxes for the form*/
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ffb6d2;
+  border-radius: 12px;
+  color: #5a2a45;
+}
+
+/*styles submit button*/
+input[type="submit"] {
+  width: auto;
+  background: #ff8fc4;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  nav li {
+    display: block;
+    margin: 0.35rem 0;
+  }
+}
