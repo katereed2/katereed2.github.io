@@ -1,6 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;    background-color: white;
     width: 500px;
     margin: 40px auto;
     color: #333;
@@ -18,7 +17,7 @@ body {
   
   button {
     padding: 10px 15px;
-    background-color: darkblue;
+    background-color: pink;
     color: white;
     border: none;
     cursor: pointer;
@@ -29,7 +28,7 @@ body {
   }
   
   p.story {
-    background-color: white;
+    background-color: pink;
     padding: 15px;
     margin-top: 20px;
     visibility: hidden;
