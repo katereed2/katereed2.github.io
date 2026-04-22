@@ -1,0 +1,174 @@
+* { /*adds padding + borders*/
+    box-sizing: border-box;
+  }
+  
+  body { /*styles page and ceneters*/
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: #ffd6e8;
+    color: #7a1748;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app {/*controls width*/
+    width: min(800px, 92vw);
+    text-align: center;
+  }
+  
+  h1 { /*header styling*/
+    color: #c0266f;
+    font-size: 48px;
+    text-shadow: 3px 3px white;
+  }
+  
+  .volumePanel { /*box that holds all the inetracive stuff*/
+    background: #fff7fb;
+    border: 4px solid #f472b6;
+    border-radius: 28px;
+    padding: 30px;
+    box-shadow: 0 12px 0 #f9a8d4;
+  }
+  
+  .display p { /*styling of current volume*/
+    margin: 0;
+    color: #be185d;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #currentVolume { /*styles the larger volume percentage*/
+    font-size: 44px;
+    font-weight: bold;
+    color: #ec4899;
+    margin-top: 8px;
+  }
+  
+  .bowArea { /*holders + center the bow*/
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bow { /*comtainer to hold all the bow attributes*/
+    position: relative;
+    width: 430px;
+    height: 210px;
+    transition: transform 0.2s;
+  }
+  
+  .bowCurve { /*create the pink curved part for the bow*/
+    position: absolute;
+    right: 55px;
+    top: 25px;
+    width: 150px;
+    height: 160px;
+    border: 12px solid #f472b6;
+    border-left: none;
+    border-radius: 0 120px 120px 0;
+  }
+  
+  .string { /*creates the "string" part of the bow*/
+    position: absolute;
+    right: 120px;
+    top: 30px;
+    width: 5px;
+    height: 150px;
+    background: #be185d;
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 90px;
+    top: 98px;
+    width: 260px;
+    height: 12px;
+    background: #f9a8d4;
+    border: 3px solid #be185d;
+    border-radius: 999px;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+  
+  .arrow::before { /*arrow point*/
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: -12px;
+    border-left: 28px solid #ec4899;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+  }
+  
+  .arrowHidden {
+    opacity: 0;
+  }
+  
+  .handle { /*heart creation, uses a square and two circles, roateing the sqaure, image was werird*/
+    position: absolute;
+    left: 75px;
+    top: 88px;
+    width: 34px;
+    height: 34px;
+    background: #ff5aa5;
+    transform: rotate(-45deg);
+    cursor: grab;
+    touch-action: none;
+    z-index: 3;
+  }
+  
+  .handle::before,
+  .handle::after { /*two cicular parts of the heart*/
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background: #ff5aa5;
+    border-radius: 50%;
+  }
+  
+  .handle::before {/*posittioning for the heart circle #1*/
+    top: -17px;
+    left: 0;
+  }
+  
+  .handle::after { /*postioning for the heart circle #2*/
+    top: 0;
+    left: 17px;
+  }
+  
+  .hint { /*styles for the instrcutions*/
+    color: #9d174d;
+    font-style: italic;
+  }
+  
+  button { /*styles the set volume button*/
+    padding: 14px 24px;
+    border: 4px solid #be185d;
+    border-radius: 999px;
+    background: #ff7abf;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #be185d;
+  }
+  
+  button:hover { /*adds hover color */
+    background: #ec4899;
+  }
+  
+  button:active { /*transforms size of button to apepar as though it was clicked*/
+    transform: translateY(6px);
+    box-shadow: none;
+  }
+  
+  /*scales down for iphone*/
+  @media (max-width: 650px) {
+    .bow {
+      transform: scale(0.75);
+    }
+  }
+  

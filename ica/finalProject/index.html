@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worst Volume Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Bow & Arrow Bad Volume</h1>
+
+    <section class="volumePanel">
+      <div class="display">
+        <p>Current Volume</p>
+        <div id="currentVolume">50%</div>
+      </div>
+
+      <div class="bowArea">
+        <div id="bow" class="bow">
+          <div class="bowCurve"></div>
+          <div class="string"></div>
+          <div id="arrow" class="arrow"></div>
+          <div id="handle" class="handle"></div>
+        </div>
+      </div>
+
+      <p class="hint">Pull the heart back, release, then press Set Volume.</p>
+
+      <div class="controls">
+        <button id="setButton">Set Volume</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
